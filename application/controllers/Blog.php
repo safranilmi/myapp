@@ -10,7 +10,7 @@ class Blog extends CI_Controller
 		$data['nama'] = $nama;
 		$data['goldarah'] = $goldarah;
 		$data['alamat'] = $alamat;
-		$this->load->view('blog', $data);
+		$this->load->view('blog');
 	}
 	
 }
