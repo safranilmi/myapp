@@ -5,11 +5,15 @@
  */
 class Blog extends CI_Controller
 {
-	public function index($nama, $goldarah, $alamat)
+	public function index()
 	{
-		$data['nama'] = $nama;
-		$data['goldarah'] = $goldarah;
-		$data['alamat'] = $alamat;
+		$blogs = [
+			[
+				'title' => 'Artikel Pertama'
+				'content' => ''
+			],
+		];
+
 		$this->load->view('blog');
 	}
 	
